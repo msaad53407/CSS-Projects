@@ -1,0 +1,153 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(110, 178, 212);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  width: 400px;
+  height: 630px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  justify-content: unset;
+  gap: 20px;
+  box-shadow: 0 3px 15px rgb(48, 47, 47);
+}
+
+.card__image {
+  flex: 0.5;
+  width: 100%;
+  height: 30%;
+  object-fit: fill;
+  border-radius: 15px 15px 0 0;
+}
+
+.card__details {
+  gap: 25px;
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+.card__details > * {
+  margin: 0;
+}
+
+.card__details h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.class__details-para {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  width: 75%;
+}
+
+.card__subscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(141, 245, 245, 0.674);
+  padding: 8px 15px;
+  align-items: center;
+  height: fit-content;
+  width: 80%;
+  border-radius: 13px;
+}
+
+.card__subscription-image {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.card__subscription-image img {
+  width: 37px;
+  height: 37px;
+  object-fit: contain;
+}
+
+.card__subscription-current-plan {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.card__subscription-current-plan__details {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card__subscription-current-plan__details p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card__subscription-change-plan a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card__payment-button,
+.card__cancel-button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 87%;
+  padding: 10px 15px;
+  height: 60px;
+}
+
+.card__payment-button {
+  background: rgb(1, 1, 70);
+  box-shadow: 0px 8px 30px rgb(48, 47, 47);
+}
+
+.card__payment-button p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.card__cancel-button p {
+  font-weight: 700;
+  font-size: 16px;
+}
